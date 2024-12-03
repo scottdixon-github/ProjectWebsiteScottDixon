@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.star-canvas {
+  mix-blend-mode: screen;
+}
+
+.phone-container {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 255, 0.3));
+}
+
+.floating-phone {
+  animation: float 3s ease-in-out infinite;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  filter: blur(8px);
+  animation: pulse 8s ease-in-out infinite;
+  background: radial-gradient(circle at center, var(--circle-color), transparent);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.25;
+  }
+}
