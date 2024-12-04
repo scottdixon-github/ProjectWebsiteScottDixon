@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Smartphone } from 'lucide-react';
+
 
 interface Star {
   x: number;
@@ -21,13 +21,6 @@ interface Phone {
   offset: number;
 }
 
-interface Circle {
-  x: number;
-  y: number;
-  size: number;
-  color: string;
-  delay: number;
-}
 
 export const StarBackground: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -43,7 +36,6 @@ export const StarBackground: React.FC = () => {
 
     const stars: Star[] = [];
     const phones: Phone[] = [];
-    const circles: Circle[] = [];
     const numStars = 150;
     const numPhones = 8;
     const numCircles = 6;
