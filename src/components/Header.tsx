@@ -3,18 +3,18 @@ import { Menu, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 w-full bg-black/80 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed top-0 w-full bg-purple-300 backdrop-blur-sm z-25 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            <span className="text-xl font-bold text-gray-900">Scott Dixon | Software Engineer</span>
+        <div className="flex justify-between items-center py-8">
+          <div className="flex justify-between items-center">
+            <span className="text-xl font-bold text-black-100"> Scott Dixon | Software Engineer </span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">About</a>
-            <a href="#projects" className="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
-            <a href="#skills" className="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            <a href="#about" className="text-black-600 hover:text-purple-600 transition-colors">About</a>
+            <a href="#projects" className="text-black-600 hover:text-purple-600 transition-colors">Projects</a>
+            <a href="#skills" className="text-black-600 hover:text-purple-600 transition-colors">Skills</a>
+            <a href="#contact" className="text-black-600 hover:text-purple-600 transition-colors">Contact</a>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
