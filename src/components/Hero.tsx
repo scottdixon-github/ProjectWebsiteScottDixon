@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
             Full Stack Developer
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            I build exceptional digital experiences that combine beautiful design with powerful functionality.
+            I build expressive digital experiences that combine cool design features & powerful functionality.
           </p>
           <a
             href="#projects"

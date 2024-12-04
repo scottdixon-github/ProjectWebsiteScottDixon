@@ -3,11 +3,11 @@ import { Menu, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed top-0 w-full bg-black/80 backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <span className="text-xl font-bold text-gray-800">Scott Dixon | Software Engineer</span>
+            <span className="text-xl font-bold text-gray-900">Scott Dixon | Software Engineer</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -18,13 +18,13 @@ export const Header: React.FC = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/scottdixon-github" target="_blank" rel="noopener noreferrer">
               <Github className="w-5 h-5 text-gray-600 hover:text-blue-600 transition-colors" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/scott-dixon-b0583272/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5 text-gray-600 hover:text-blue-600 transition-colors" />
             </a>
-            <a href="mailto:contact@example.com">
+            <a href="mailto:scottdixon1249@gmail.com">
               <Mail className="w-5 h-5 text-gray-600 hover:text-blue-600 transition-colors" />
             </a>
           </div>
