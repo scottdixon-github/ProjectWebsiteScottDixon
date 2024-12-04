@@ -4,12 +4,12 @@ import { ExternalLink, Github } from 'lucide-react';
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-16 bg-gray-50">
+    <section id="projects" className="py-16 bg-purple-300">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="bg-white rounded-lg overflow-hidden shadow-lg">
+            <div key={project.id} className="bg-gray-300 rounded-lg overflow-hidden shadow-lg">
               <img
                 src={project.image}
                 alt={project.title}
@@ -17,7 +17,7 @@ export const Projects: React.FC = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-gray-50 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
                     <span

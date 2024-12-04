@@ -189,16 +189,16 @@ export const StarBackground: React.FC = () => {
           const element = phoneElements[index] as HTMLElement;
           if (!element) return;
 
-          const time = Date.now() / 1000;
-          phone.y += phone.speed;
-          const x = phone.x + Math.sin(time + phone.offset) * phone.amplitude;
+          const time = Date.now() / 10000;
+          phone.x  += phone.speed;
+          const x = phone.y * Math.tan(time * phone.offset) / Math.cos(phone.y * phone.amplitude);
 
           if (phone.y > window.innerHeight) {
-            phone.y = -50;
+            phone.y = 5000;
             phone.x = Math.random() * window.innerWidth;
           }
 
-          element.style.transform = `translate(${x}px, ${phone.y}px) rotate(${phone.rotation + Math.sin(time) * 20}deg) scale(${phone.scale})`;
+          element.style.transform = `translate(${x}px, ${phone.y}px) rotate(${phone.rotation + Math.sin(time) * 60}deg) scale(${phone.scale})`;
         });
       }
 

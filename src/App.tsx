@@ -8,7 +8,7 @@ import { StarBackground } from './components/StarBackground';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200">
+    <div className="min-h-screen bg-gradient-to-b from-gray-200 to-white-500">
       <StarBackground />
       <Header />
       <main className="relative">
